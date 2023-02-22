@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "46ce4f33-2aac-49d0-a890-4f6547e5cb6f",
+		"name": "trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25271214"
+	},
+	"item": [
+		{
+			"name": "create a board on trello",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name={Demoboard}&key=aa38741c9070e0f822ff0dbf5b55b3ec&token=ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{Demoboard}"
+						},
+						{
+							"key": "key",
+							"value": "aa38741c9070e0f822ff0dbf5b55b3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63de7267e1a9f984a7f1396c?key=aa38741c9070e0f822ff0dbf5b55b3ec&token=ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD&name=pratiksha",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63de7267e1a9f984a7f1396c"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "aa38741c9070e0f822ff0dbf5b55b3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD"
+						},
+						{
+							"key": "name",
+							"value": "pratiksha"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Label on Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63de7267e1a9f984a7f1396c/labels?name=Demoboard&color=black&key=aa38741c9070e0f822ff0dbf5b55b3ec&token=ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63de7267e1a9f984a7f1396c",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Demoboard"
+						},
+						{
+							"key": "color",
+							"value": "black"
+						},
+						{
+							"key": "key",
+							"value": "aa38741c9070e0f822ff0dbf5b55b3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get checklist on board",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63de7267e1a9f984a7f1396c/checklists?key=aa38741c9070e0f822ff0dbf5b55b3ec&token=ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63de7267e1a9f984a7f1396c",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "aa38741c9070e0f822ff0dbf5b55b3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63de7267e1a9f984a7f1396c?key=aa38741c9070e0f822ff0dbf5b55b3ec&token=ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63de7267e1a9f984a7f1396c"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "aa38741c9070e0f822ff0dbf5b55b3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTA682ce80a3e906c5e740faef11e28767d17277375f46d155d06bb6728636b5e2bA1C2C1AD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
